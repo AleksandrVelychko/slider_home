@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url(../images/bg.jpeg) no-repeat center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 50px;
+  margin-bottom: 25px;
+  color: #303030;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 86px;
+}
+
+.header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header__img {
+  position: absolute;
+  -webkit-transform: translate(380px, -63px);
+          transform: translate(380px, -63px);
+}
+
+.header__img-2 {
+  position: absolute;
+  -webkit-transform: translate(-570px, -130px);
+          transform: translate(-570px, -130px);
+}
+
+.slider {
+  width: 90%;
+  margin: 100px auto 0;
+}
+
+.slider__item {
+  height: 400px;
+  width: 440px;
+  position: relative;
+  margin: 0 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+}
+
+.slider__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #32eaad;
+}
+
+.slider__item:hover .slider__text,
+.slider__item:hover .slider__author {
+  display: block;
+  color: #fff;
+  position: absolute;
+  opacity: 1;
+}
+
+.slider__img {
+  height: 400px;
+  width: 440px;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slider__img-wrap {
+  background: #32eaad;
+}
+
+.slider__img-wrap:hover {
+  opacity: 0.5;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 65%;
+  width: 100%;
+}
+
+.slider-prev, .slider-next {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.slider-prev:hover, .slider-next:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+.slider-next {
+  left: auto;
+  right: 30px;
+}
+
+.slider .slide {
+  margin-bottom: 120px;
+}
+
+.slider__text {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: translateY(280px);
+          transform: translateY(280px);
+  margin-left: 25px;
+  display: none;
+}
+
+.slider__author {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: translateY(350px);
+          transform: translateY(350px);
+  margin-left: 25px;
+  display: none;
+}
+/*# sourceMappingURL=styles.min.css.map */

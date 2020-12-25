@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+  text-transform: uppercase;
+
+  &__img {
+    position: absolute;
+    transform: translate(380px, -63px);
+  }
+
+  &__img-2 {
+    position: absolute;
+    transform: translate(-570px, -130px);
+  }
+}
